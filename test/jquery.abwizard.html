@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jQuery ABWizard Test Suite</title>
+  <!-- Load local jQuery. This can be overridden with a ?jquery=___ param. -->
+  <script src="../libs/jquery-loader.js"></script>
+  <!-- Load local QUnit. -->
+  <link rel="stylesheet" href="../libs/qunit/qunit.css" media="screen">
+  <script src="../libs/qunit/qunit.js"></script>
+  <script src="../libs/qunit/sinon-1.7.1.js"></script>
+  <script src="../libs/qunit/sinon-qunit-1.0.0.js"></script>
+  <!-- Load local lib and tests. -->
+  <script src="../src/jquery.abwizard.js"></script>
+  <script src="jquery.abwizard_test.js"></script>
+  <!-- Removing access to jQuery and $. But it'll still be available as _$, if
+       you REALLY want to mess around with jQuery in the console. REMEMBER WE
+       ARE TESTING A PLUGIN HERE, THIS HELPS ENSURE BEST PRACTICES. REALLY. -->
+  <script>window._$ = jQuery.noConflict(true);</script>
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture">
+    <div id="abwizard">
+      <div id="one" class="step">
+        <h1>Step 1</h1>
+        <p>This is step one</p>
+      </div>
+      <div id="two" class="step">
+        <h1>Step 2</h1>
+        <p>This is step two</p>
+      </div>
+      <div id="three" class="step">
+        <h1>Step 3</h1>
+        <p>This is step three</p>
+      </div>
+      <div id="four" data-href="ajax_step4.txt" class="step atep-ajax"></div>
+      <div id="five" class="step">
+        <h1>Step 5</h1>
+        <p>This is step five</p>
+      </div>
+    </div> <!-- abwizard -->
+    <div id="abwizard-navigation">
+      <ul>
+        <li class="one"><a href="">Step 1</a></li>
+      </ul>
+      <ul>
+        <li class="two"><a href="">Step 2</a></li>
+      </ul>
+      <ul>
+        <li class="three"><a href="">Step 3</a></li>
+      </ul>
+      <ul>
+        <li class="four"><a href="">Step 4</a></li>
+      </ul>
+      <ul>
+        <li class="five"><a href="">Step 5</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

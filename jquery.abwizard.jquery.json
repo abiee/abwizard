@@ -1,0 +1,27 @@
+{
+  "name": "jquery.abwizard",
+  "title": "jQuery ABWizard",
+  "description": "Wizard widget for jQuery",
+  "version": "0.0.1",
+  "homepage": "https://github.com/abiee/abwizard",
+  "author": {
+    "name": "Abiee Alejandro Echamea Márquez",
+    "email": "abiee.alejandro@gmail.com",
+    "url": "www.abiee.com.mx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/abiee/abwizard.git"
+  },
+  "bugs": "https://github.com/abiee/abwizard/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/abiee/abwizard/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "keywords": []
+}
